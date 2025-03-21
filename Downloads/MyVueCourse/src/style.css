@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@tailwind utilities;
+@plugin "daisyui";
+
+@theme {
+  --font-poppins: Poppins, sans-serif;
+}
+
