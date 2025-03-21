@@ -8,10 +8,18 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(morgan('combined'));
 
-app.get('/status', (req, res) => {
+app.post('/status', (req, res) => {
   res.send({
     message:'Hello from Express server!'
   });
 })
 
-app.listen(process.env.PORT || 8081);
+
+//using post request
+// app.post('/register', (req, res) => {
+//   res.send({
+//     message:`Hello, ${req.body.email} from Express server! You have registered`
+//   });
+// })
+
+app.listen(process.env.PORT || 3000);
