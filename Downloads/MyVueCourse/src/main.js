@@ -2,6 +2,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import '../src/style.css'
+import router from './router'
 
 const app = createApp(App);
 //Custom Global Directives
@@ -19,4 +20,6 @@ app.directive('bounce', {
   }
 });
 
+
+app.use(router);
 app.mount('#app')
